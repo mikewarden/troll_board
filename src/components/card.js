@@ -5,14 +5,18 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 
 const UserCard = (props) => {
 
     return (
         <Card style={styles.cardRowStyle}>
                             <Card.Body>
-                                <Fab color="primary" aria-label="add" onClick={props.increment}>
+                                <Fab size="small" style={styles.buttonStyle} color="primary" aria-label="add" onClick={props.increment}>
                                     <AddIcon />
+                                </Fab>
+                                <Fab size="small" color="primary" aria-label="add" onClick={props.decrement}>
+                                    <RemoveIcon />
                                 </Fab>
                                 <h3>{props.name}</h3>
                                 <img src={props.userPic}></img>
@@ -23,9 +27,7 @@ const UserCard = (props) => {
 
 const styles = {
     buttonStyle: {
-        right: '0',
-        marginTop: '20%',
-        marginBottom: '20%'
+        marginRight: '10px'
     },
     cardStyle: {
         backgroundColor: '#1D2224',

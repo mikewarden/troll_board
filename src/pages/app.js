@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Dropdown from 'react-bootstrap/Dropdown'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
 import TrollChart from '../components/barChart'
@@ -32,28 +33,53 @@ const App = (props) => {
     let bar8 = bar8Data;
 
     const incrementBar1 = () => {
-        setBar1Data(bar1Data + 1);
+        setBar1Data(bar1Data + 10);
     }
     const incrementBar2 = () => {
-        setBar2Data(bar2Data + 1);
+        setBar2Data(bar2Data + 10);
     }
     const incrementBar3 = () => {
-        setBar3Data(bar3Data + 1);
+        setBar3Data(bar3Data + 10);
     }
     const incrementBar4 = () => {
-        setBar4Data(bar4Data + 1);
+        setBar4Data(bar4Data + 10);
     }
     const incrementBar5 = () => {
-        setBar5Data(bar5Data + 1);
+        setBar5Data(bar5Data + 10);
     }
     const incrementBar6 = () => {
-        setBar6Data(bar6Data + 1);
+        setBar6Data(bar6Data + 10);
     }
     const incrementBar7 = () => {
-        setBar7Data(bar7Data + 1);
+        setBar7Data(bar7Data + 10);
     }
     const incrementBar8 = () => {
-        setBar8Data(bar8Data + 1);
+        setBar8Data(bar8Data + 10);
+    }
+
+    const decrementBar1 = () => {
+        setBar1Data(bar1Data - 10);
+    }
+    const decrementBar2 = () => {
+        setBar2Data(bar2Data - 10);
+    }
+    const decrementBar3 = () => {
+        setBar3Data(bar3Data - 10);
+    }
+    const decrementBar4 = () => {
+        setBar4Data(bar4Data - 10);
+    }
+    const decrementBar5 = () => {
+        setBar5Data(bar5Data - 10);
+    }
+    const decrementBar6 = () => {
+        setBar6Data(bar6Data - 10);
+    }
+    const decrementBar7 = () => {
+        setBar7Data(bar7Data - 10);
+    }
+    const decrementBar8 = () => {
+        setBar8Data(bar8Data - 10);
     }
     
         return (
@@ -95,30 +121,62 @@ const App = (props) => {
                 <h5 style={styles.headerText}>Users</h5>
                 <Row>
                     <Col>
-                        <UserCard name="Rigo" increment={incrementBar1}/>
+                        <UserCard 
+                            name="Rigo" 
+                            increment={incrementBar1}
+                            decrement={decrementBar1}
+                        />
                     </Col>
                     <Col>
-                    <UserCard name="Dick Wyn" increment={incrementBar2}/>
+                        <UserCard 
+                            name="Dick Wyn" 
+                            increment={incrementBar2}
+                            decrement={decrementBar2}
+                            />
                     </Col>
                     <Col>
-                    <UserCard name="Juan" increment={incrementBar3}/>
+                        <UserCard 
+                            name="Juan" 
+                            increment={incrementBar3}
+                            decrement={decrementBar3}
+                        />
                     </Col>
                     <Col>
-                    <UserCard name="Josh" increment={incrementBar4}/>
+                        <UserCard 
+                            name="Josh" 
+                            increment={incrementBar4}
+                            decrement={decrementBar4}
+                        />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <UserCard name="Brandon" increment={incrementBar5}/>
+                        <UserCard 
+                            name="Brandon" 
+                            increment={incrementBar5}
+                            decrement={decrementBar5}
+                        />
                     </Col>
                     <Col>
-                        <UserCard name="Jaeho" increment={incrementBar6}/>
+                        <UserCard 
+                            name="Jaeho" 
+                            increment={incrementBar6}
+                            decrement={decrementBar6}
+                        />
                     </Col>
                     <Col>
-                        <UserCard name="Mike" increment={incrementBar7}/>
+                        <UserCard 
+                            name="Mike" 
+                            increment={incrementBar7}
+                            decrement={decrementBar7}
+                            />
                     </Col>
                     <Col>
-                        <UserCard name="Joseph" increment={incrementBar8}/>
+                        <UserCard 
+                            name="Joseph" 
+                            increment={incrementBar8}
+                            decrement={decrementBar8}
+                            />
                     </Col>
                 </Row>
             </Container>

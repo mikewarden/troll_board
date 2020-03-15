@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
+import PersonIcon from '@material-ui/icons/Person'
 import TrollChart from '../components/barChart'
 import UserCard from '../components/card'
 import SheriffMenu from '../components/dropdown'
@@ -139,6 +140,7 @@ const App = (props) => {
                             name="Rigo" 
                             increment={incrementBar1}
                             decrement={decrementBar1}
+                            userPic={<PersonIcon />}
                         />
                     </Col>
                     <Col>
@@ -146,6 +148,7 @@ const App = (props) => {
                             name="Dick Wyn" 
                             increment={incrementBar2}
                             decrement={decrementBar2}
+                            userPic={<PersonIcon />}
                             />
                     </Col>
                     <Col>
@@ -153,6 +156,7 @@ const App = (props) => {
                             name="Juan" 
                             increment={incrementBar3}
                             decrement={decrementBar3}
+                            userPic={<PersonIcon />}
                         />
                     </Col>
                     <Col>
@@ -160,6 +164,7 @@ const App = (props) => {
                             name="Josh" 
                             increment={incrementBar4}
                             decrement={decrementBar4}
+                            userPic={<PersonIcon />}
                         />
                     </Col>
                 </Row>
@@ -169,6 +174,7 @@ const App = (props) => {
                             name="Brandon" 
                             increment={incrementBar5}
                             decrement={decrementBar5}
+                            userPic={<PersonIcon />}
                         />
                     </Col>
                     <Col>
@@ -176,6 +182,7 @@ const App = (props) => {
                             name="Jaeho" 
                             increment={incrementBar6}
                             decrement={decrementBar6}
+                            userPic={<PersonIcon />}
                         />
                     </Col>
                     <Col>
@@ -183,6 +190,7 @@ const App = (props) => {
                             name="Mike" 
                             increment={incrementBar7}
                             decrement={decrementBar7}
+                            userPic={<PersonIcon />}
                             />
                     </Col>
                     <Col>
@@ -190,6 +198,7 @@ const App = (props) => {
                             name="Guest" 
                             increment={incrementBar8}
                             decrement={decrementBar8}
+                            userPic={<PersonIcon />}
                             />
                     </Col>
                 </Row>

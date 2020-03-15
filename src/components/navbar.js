@@ -63,8 +63,8 @@ const Navbar = () => {
       <div className={classes.demo2}>
         <StyledTabs value={value} onChange={handleChange} aria-label="styled tabs example">
           <StyledTab label="Troll Board" />
-          <StyledTab label="Tab 2" />
-          <StyledTab label="Tab 3" />
+          <StyledTab label="Rules" />
+          <StyledTab label="About" />
         </StyledTabs>
         <Typography className={classes.padding} />
       </div>

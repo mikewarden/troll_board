@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
+import PersonIcon from '@material-ui/icons/Person';
 
 const UserCard = (props) => {
     const addDeleteText = "Add/Delete a Troll";
@@ -13,6 +14,7 @@ const UserCard = (props) => {
         <Card style={styles.cardRowStyle}>
                             <Card.Body>
                                 <h3>{props.name}</h3>
+                                {props.userPic}
                                 <p>{addDeleteText}</p>
                                 <Fab size="small" style={styles.addButtonStyle} color="primary" aria-label="add" onClick={props.increment}>
                                     <AddIcon />
@@ -20,7 +22,7 @@ const UserCard = (props) => {
                                 <Fab size="small" style={styles.minusButtonStyle} color="primary" aria-label="add" onClick={props.decrement}>
                                     <RemoveIcon />
                                 </Fab>
-                                <img src={props.userPic}></img>
+                                
                             </Card.Body>
                         </Card>
     )

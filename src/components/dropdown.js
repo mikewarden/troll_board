@@ -12,7 +12,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
         return (
         <Dropdown>
         <Dropdown.Toggle variant="warning" id="dropdown-basic">
-            The Sheriff
+            Choose the Sheriff
         </Dropdown.Toggle>
 
         <Dropdown.Menu onClick={onChange}>
@@ -23,7 +23,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
                 <Dropdown.Item name="Brandon">Brandon</Dropdown.Item>
                 <Dropdown.Item name="Jaeho">Jaeho</Dropdown.Item>
                 <Dropdown.Item name="Mike">Mike</Dropdown.Item>
-                <Dropdown.Item name="Joseph">Joseph</Dropdown.Item>
+                <Dropdown.Item name="Guest">Guest</Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
         )

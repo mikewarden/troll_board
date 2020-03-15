@@ -34,53 +34,53 @@ const App = (props) => {
     let bar8 = bar8Data;
 
     const incrementBar1 = () => {
-        setBar1Data(bar1Data + 10);
+        setBar1Data(bar1Data + 5);
     }
     const incrementBar2 = () => {
-        setBar2Data(bar2Data + 10);
+        setBar2Data(bar2Data + 5);
     }
     const incrementBar3 = () => {
-        setBar3Data(bar3Data + 10);
+        setBar3Data(bar3Data + 5);
     }
     const incrementBar4 = () => {
-        setBar4Data(bar4Data + 10);
+        setBar4Data(bar4Data + 5);
     }
     const incrementBar5 = () => {
-        setBar5Data(bar5Data + 10);
+        setBar5Data(bar5Data + 5);
     }
     const incrementBar6 = () => {
-        setBar6Data(bar6Data + 10);
+        setBar6Data(bar6Data + 5);
     }
     const incrementBar7 = () => {
-        setBar7Data(bar7Data + 10);
+        setBar7Data(bar7Data + 5);
     }
     const incrementBar8 = () => {
-        setBar8Data(bar8Data + 10);
+        setBar8Data(bar8Data + 5);
     }
 
     const decrementBar1 = () => {
-        setBar1Data(bar1Data - 10);
+        setBar1Data(bar1Data - 5);
     }
     const decrementBar2 = () => {
-        setBar2Data(bar2Data - 10);
+        setBar2Data(bar2Data - 5);
     }
     const decrementBar3 = () => {
-        setBar3Data(bar3Data - 10);
+        setBar3Data(bar3Data - 5);
     }
     const decrementBar4 = () => {
-        setBar4Data(bar4Data - 10);
+        setBar4Data(bar4Data - 5);
     }
     const decrementBar5 = () => {
-        setBar5Data(bar5Data - 10);
+        setBar5Data(bar5Data - 5);
     }
     const decrementBar6 = () => {
-        setBar6Data(bar6Data - 10);
+        setBar6Data(bar6Data - 5);
     }
     const decrementBar7 = () => {
-        setBar7Data(bar7Data - 10);
+        setBar7Data(bar7Data - 5);
     }
     const decrementBar8 = () => {
-        setBar8Data(bar8Data - 10);
+        setBar8Data(bar8Data - 5);
     }
 
     const handleSheriffClick = (name) => {
@@ -187,7 +187,7 @@ const App = (props) => {
                     </Col>
                     <Col>
                         <UserCard 
-                            name="Joseph" 
+                            name="Guest" 
                             increment={incrementBar8}
                             decrement={decrementBar8}
                             />

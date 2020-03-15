@@ -13,7 +13,7 @@ const TrollChart = (props) => {
             <ProgressBar variant="success" style={styles.barStyle} now={props.bar5} label={`Brandon ${props.bar5}%`} />
             <ProgressBar variant="warning" style={styles.barStyle} now={props.bar6} label={`Jaeho ${props.bar6}%`} />
             <ProgressBar variant="info" style={styles.barStyle} now={props.bar7} label={`Mike ${props.bar7}%`} />
-            <ProgressBar variant="danger" style={styles.barStyle} now={props.bar8} label={`Joseph ${props.bar8}%`} />
+            <ProgressBar variant="danger" style={styles.barStyle} now={props.bar8} label={`Guest ${props.bar8}%`} />
             
 
         </div>

@@ -7,21 +7,22 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import Dropdown from 'react-bootstrap/Dropdown'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
 import TrollChart from '../components/barChart'
 import UserCard from '../components/card'
+import SheriffMenu from '../components/dropdown'
 
 const App = (props) => {
-    const [bar1Data, setBar1Data] = useState(23);
-    const [bar2Data, setBar2Data] = useState(33);
-    const [bar3Data, setBar3Data] = useState(43);
-    const [bar4Data, setBar4Data] = useState(53);
-    const [bar5Data, setBar5Data] = useState(63);
-    const [bar6Data, setBar6Data] = useState(13);
-    const [bar7Data, setBar7Data] = useState(43);
-    const [bar8Data, setBar8Data] = useState(73);
+    const [bar1Data, setBar1Data] = useState(0);
+    const [bar2Data, setBar2Data] = useState(0);
+    const [bar3Data, setBar3Data] = useState(0);
+    const [bar4Data, setBar4Data] = useState(0);
+    const [bar5Data, setBar5Data] = useState(0);
+    const [bar6Data, setBar6Data] = useState(0);
+    const [bar7Data, setBar7Data] = useState(0);
+    const [bar8Data, setBar8Data] = useState(0);
+    const [sheriffName, setSheriff] = useState("Who is the Sheriff?");
 
     let bar1 = bar1Data;
     let bar2 = bar2Data;
@@ -81,6 +82,11 @@ const App = (props) => {
     const decrementBar8 = () => {
         setBar8Data(bar8Data - 10);
     }
+
+    const handleSheriffClick = (name) => {
+        console.log(name);
+        setSheriff(name);
+    }
     
         return (
             <div>
@@ -97,6 +103,12 @@ const App = (props) => {
                         <span style={styles.headerText}>Week 3 March 14</span>
                     </Col>
                     <Col xs={2}><Button style={styles.buttonStyle} variant="warning">Start Trolling</Button></Col>
+                    <Col xs={2}>
+            <SheriffMenu onChange={handleSheriffClick} />
+                    </Col>
+                    <Col xs={10}>
+                        <h4 style={styles.headerText}>{sheriffName}</h4>
+                    </Col>
                 </Row>
                 <Row>
                     <Col>

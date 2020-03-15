@@ -8,17 +8,18 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 const UserCard = (props) => {
-
+    const addDeleteText = "Add/Delete a Troll";
     return (
         <Card style={styles.cardRowStyle}>
                             <Card.Body>
+                                <h3>{props.name}</h3>
+                                <h6>{addDeleteText}</h6>
                                 <Fab size="small" style={styles.buttonStyle} color="primary" aria-label="add" onClick={props.increment}>
                                     <AddIcon />
                                 </Fab>
                                 <Fab size="small" color="primary" aria-label="add" onClick={props.decrement}>
                                     <RemoveIcon />
                                 </Fab>
-                                <h3>{props.name}</h3>
                                 <img src={props.userPic}></img>
                             </Card.Body>
                         </Card>

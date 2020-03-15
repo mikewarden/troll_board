@@ -98,9 +98,11 @@ const App = (props) => {
                 <Row>
                     <Col xs={10}>
                         <br/>
-                        <span style={styles.headerText}>Troll Board</span>
+                        <span style={styles.headerText}><h2>Troll Board</h2></span>
                         <br/>
                         <span style={styles.headerText}>Week 3 March 14</span>
+                        <br/>
+                        <br/>
                     </Col>
                     <Col xs={2}><Button style={styles.buttonStyle} variant="warning">Start Trolling</Button></Col>
                     <Col xs={2}>

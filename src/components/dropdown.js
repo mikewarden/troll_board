@@ -6,7 +6,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
         const onChange = (e) => {
             console.log(e.target.name);
-            const name = `This week's sheriff is ${e.target.name}`;
+            const name = `This week's Sheriff is ${e.target.name}`;
             props.onChange(name);
         }
         return (

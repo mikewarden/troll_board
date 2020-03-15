@@ -89,7 +89,7 @@ const App = (props) => {
     }
     
         return (
-            <div>
+            <div style={styles.bodyStyles}>
                 <Navbar />
                 <div id="header_section">
                     
@@ -199,6 +199,10 @@ const App = (props) => {
     }
 
     const styles = {
+        bodyStyles: {
+            background: 'rgb(75,80,87)',
+background: 'radial-gradient(circle, rgba(75,80,87,1) 60%, rgba(167,167,167,1) 99%)'
+        },
         appStyles: {
         backgroundColor: '#1D2224',
         width: '100%',

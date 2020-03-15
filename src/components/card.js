@@ -13,11 +13,11 @@ const UserCard = (props) => {
         <Card style={styles.cardRowStyle}>
                             <Card.Body>
                                 <h3>{props.name}</h3>
-                                <h6>{addDeleteText}</h6>
-                                <Fab size="small" style={styles.buttonStyle} color="primary" aria-label="add" onClick={props.increment}>
+                                <p>{addDeleteText}</p>
+                                <Fab size="small" style={styles.addButtonStyle} color="primary" aria-label="add" onClick={props.increment}>
                                     <AddIcon />
                                 </Fab>
-                                <Fab size="small" color="primary" aria-label="add" onClick={props.decrement}>
+                                <Fab size="small" style={styles.minusButtonStyle} color="primary" aria-label="add" onClick={props.decrement}>
                                     <RemoveIcon />
                                 </Fab>
                                 <img src={props.userPic}></img>
@@ -27,8 +27,13 @@ const UserCard = (props) => {
 }
 
 const styles = {
-    buttonStyle: {
-        marginRight: '10px'
+    addButtonStyle: {
+        marginRight: '10px',
+        backgroundColor: '#00B02C'
+    },
+    minusButtonStyle: {
+        marginRight: '10px',
+        backgroundColor: '#FF4546'
     },
     cardStyle: {
         backgroundColor: '#1D2224',

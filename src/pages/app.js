@@ -14,6 +14,8 @@ import TrollChart from '../components/barChart'
 import UserCard from '../components/card'
 import SheriffMenu from '../components/dropdown'
 
+const moment = require('moment');
+
 const App = (props) => {
     const [bar1Data, setBar1Data] = useState(0);
     const [bar2Data, setBar2Data] = useState(0);
@@ -100,12 +102,15 @@ const App = (props) => {
                     <Col xs={10}>
                         <br/>
                         <span style={styles.headerText}><h2>Troll Board</h2></span>
-                        <br/>
-                        <span style={styles.headerText}>Week 3 March 14</span>
+                        <span style={styles.headerText}>{moment().format('dddd') + ", "}
+                        {moment().format('MMMM Do YYYY, h:mm a')}</span>
                         <br/>
                         <br/>
                     </Col>
+                    {/* Start Trolling button is currently useless. */}
                     <Col xs={2}><Button style={styles.buttonStyle} variant="warning">Start Trolling</Button></Col>
+                    </Row>
+                    <Row>
                     <Col xs={2}>
             <SheriffMenu onChange={handleSheriffClick} />
                     </Col>

@@ -13,6 +13,7 @@ import PersonIcon from '@material-ui/icons/Person'
 import TrollChart from '../components/barChart'
 import UserCard from '../components/card'
 import SheriffMenu from '../components/dropdown'
+import Background from '../images/Bitmap.png'
 
 const moment = require('moment');
 
@@ -214,8 +215,7 @@ const App = (props) => {
 
     const styles = {
         bodyStyles: {
-            background: 'rgb(75,80,87)',
-background: 'radial-gradient(circle, rgba(75,80,87,1) 60%, rgba(167,167,167,1) 99%)'
+            backgroundImage: `url(${Background})`
         },
         appStyles: {
         backgroundColor: '#1D2224',

@@ -3,8 +3,8 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-
-
+import PersonIcon from '@material-ui/icons/Person';
+import Logo from '../images/navicon.svg';
 
 
 
@@ -60,8 +60,11 @@ const Navbar = () => {
   return (
     <div className={classes.root}>
       
+      
       <div className={classes.demo2}>
         <StyledTabs value={value} onChange={handleChange} aria-label="styled tabs example">
+          {/* <StyledTab></StyledTab> */}
+          <img src={Logo} />
           <StyledTab label="Troll Board" />
           <StyledTab label="Rules" />
           <StyledTab label="About" />

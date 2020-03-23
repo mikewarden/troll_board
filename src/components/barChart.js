@@ -22,11 +22,11 @@ const TrollChart = (props) => {
 const styles = {
     barStyle: {
     marginBottom: '8px',
-    height: '20px',
-    backgroundColor: '#3F4B4F'
+    height: '30px',
+    backgroundColor: '#323B42'
     },
     chartStyle: {
-        backgroundColor: '#1D2224', 
+        backgroundColor: '#262C31', 
     }
 }
 

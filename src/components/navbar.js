@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   demo2: {
-    backgroundColor: '#000',
+    backgroundColor: '#171A1E',
   },
 }));
 
@@ -63,7 +63,7 @@ const Navbar = () => {
       
       <div className={classes.demo2}>
         <StyledTabs value={value} onChange={handleChange} aria-label="styled tabs example">
-          {/* <StyledTab></StyledTab> */}
+        <StyledTab disabled />
           <img src={Logo} />
           <StyledTab label="Troll Board" />
           <StyledTab label="Rules" />

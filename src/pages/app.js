@@ -122,7 +122,7 @@ const App = (props) => {
                 <Row>
                     <Col>
                         <Card style={styles.cardStyle}>
-                            <Card.Body>
+                            <Card.Body style={{backgroundColor:'#262C31'}}>
                                 <h4 style={styles.headerText}>Overview</h4>
                                 <TrollChart
                                     bar1={bar1}
@@ -140,6 +140,7 @@ const App = (props) => {
                     
                 </Row>
                 <h5 style={styles.headerText}>Users</h5>
+                <hr style={{backgroundColor: "#979797"}} />
                 <Row>
                     <Col>
                         <UserCard 
@@ -218,7 +219,7 @@ const App = (props) => {
             backgroundImage: `url(${Background})`
         },
         appStyles: {
-        backgroundColor: '#1D2224',
+        backgroundColor: '#262C31',
         width: '100%',
         height: '100%'
         },

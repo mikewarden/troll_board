@@ -3,28 +3,48 @@ import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import PersonIcon from '@material-ui/icons/Person';
 
+
 const UserCard = (props) => {
-    const addDeleteText = "Add/Delete a Troll";
+    
     return (
         <Card style={styles.cardRowStyle}>
-                            <Card.Body>
-                                <h3>{props.name}</h3>
-                                {props.userPic}
-                                <p>{addDeleteText}</p>
-                                <Fab size="small" style={styles.addButtonStyle} color="primary" aria-label="add" onClick={props.increment}>
+            <Card.Body>
+                <Container>
+                    <Row>
+                        <Col xs={2}>
+                            {props.userPic}
+                        </Col>
+                        <Col xs={10}>
+                            <h5>{props.name}</h5>
+                            <p>Typical Troll</p>
+                        </Col>
+                    </Row>
+                    {/* <Fab size="small" style={styles.addButtonStyle} color="primary" aria-label="add" onClick={props.increment}>
                                     <AddIcon />
-                                </Fab>
-                                <Fab size="small" style={styles.minusButtonStyle} color="primary" aria-label="add" onClick={props.decrement}>
+                                </Fab> */}
+                    <Row>
+                        <Col xs={4}>
+                            <h6>Trolls</h6>
+                            <p>{props.numTrolls}</p>
+                        </Col>
+                        <Col xs={8}>
+                    <Button onClick={props.increment} style={styles.buttonStyle} variant="warning">+ Add Troll</Button>
+                        </Col>
+                    </Row>
+                                {/* <Fab size="small" style={styles.minusButtonStyle} color="primary" aria-label="add" onClick={props.decrement}>
                                     <RemoveIcon />
-                                </Fab>
-                                
-                            </Card.Body>
-                        </Card>
+                                </Fab> */}
+                </Container>
+            </Card.Body>
+        </Card>
     )
 }
 
@@ -38,15 +58,17 @@ const styles = {
         backgroundColor: '#FF4546'
     },
     cardStyle: {
-        backgroundColor: '#1D2224',
+        backgroundColor: '#323B42',
+        color: '#FFF',
     },
     cardRowStyle: {
-        backgroundColor: '#3F4B4F',
+        color: '#FFF',
+        backgroundColor: '#323B42',
         marginTop: '8%',
         marginBottom: '5%'
     },
     headerText: {
-        color: '#DAE9F0',
+        color: '#FFF',
         
     }
 }

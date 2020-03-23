@@ -66,8 +66,8 @@ const Navbar = () => {
         <StyledTab disabled />
           <img src={Logo} />
           <StyledTab label="Troll Board" />
-          <StyledTab label="Rules" />
-          <StyledTab label="About" />
+          <StyledTab label="Archived" />
+          <StyledTab label="Create" />
         </StyledTabs>
         <Typography className={classes.padding} />
       </div>

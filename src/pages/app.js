@@ -148,6 +148,7 @@ const App = (props) => {
                             increment={incrementBar1}
                             decrement={decrementBar1}
                             userPic={<PersonIcon />}
+                            numTrolls={bar1Data}
                         />
                     </Col>
                     <Col>
@@ -156,6 +157,7 @@ const App = (props) => {
                             increment={incrementBar2}
                             decrement={decrementBar2}
                             userPic={<PersonIcon />}
+                            numTrolls={bar2Data}
                             />
                     </Col>
                     <Col>
@@ -164,6 +166,7 @@ const App = (props) => {
                             increment={incrementBar3}
                             decrement={decrementBar3}
                             userPic={<PersonIcon />}
+                            numTrolls={bar3Data}
                         />
                     </Col>
                     <Col>
@@ -172,6 +175,7 @@ const App = (props) => {
                             increment={incrementBar4}
                             decrement={decrementBar4}
                             userPic={<PersonIcon />}
+                            numTrolls={bar4Data}
                         />
                     </Col>
                 </Row>
@@ -182,6 +186,7 @@ const App = (props) => {
                             increment={incrementBar5}
                             decrement={decrementBar5}
                             userPic={<PersonIcon />}
+                            numTrolls={bar5Data}
                         />
                     </Col>
                     <Col>
@@ -190,6 +195,7 @@ const App = (props) => {
                             increment={incrementBar6}
                             decrement={decrementBar6}
                             userPic={<PersonIcon />}
+                            numTrolls={bar6Data}
                         />
                     </Col>
                     <Col>
@@ -198,6 +204,7 @@ const App = (props) => {
                             increment={incrementBar7}
                             decrement={decrementBar7}
                             userPic={<PersonIcon />}
+                            numTrolls={bar7Data}
                             />
                     </Col>
                     <Col>
@@ -206,6 +213,7 @@ const App = (props) => {
                             increment={incrementBar8}
                             decrement={decrementBar8}
                             userPic={<PersonIcon />}
+                            numTrolls={bar8Data}
                             />
                     </Col>
                 </Row>

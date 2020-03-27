@@ -38,53 +38,53 @@ const App = (props) => {
     let bar8 = bar8Data;
 
     const incrementBar1 = () => {
-        setBar1Data(bar1Data + 5);
+        setBar1Data(bar1Data + 1);
     }
     const incrementBar2 = () => {
-        setBar2Data(bar2Data + 5);
+        setBar2Data(bar2Data + 1);
     }
     const incrementBar3 = () => {
-        setBar3Data(bar3Data + 5);
+        setBar3Data(bar3Data + 1);
     }
     const incrementBar4 = () => {
-        setBar4Data(bar4Data + 5);
+        setBar4Data(bar4Data + 1);
     }
     const incrementBar5 = () => {
-        setBar5Data(bar5Data + 5);
+        setBar5Data(bar5Data + 1);
     }
     const incrementBar6 = () => {
-        setBar6Data(bar6Data + 5);
+        setBar6Data(bar6Data + 1);
     }
     const incrementBar7 = () => {
-        setBar7Data(bar7Data + 5);
+        setBar7Data(bar7Data + 1);
     }
     const incrementBar8 = () => {
-        setBar8Data(bar8Data + 5);
+        setBar8Data(bar8Data + 1);
     }
 
     const decrementBar1 = () => {
-        setBar1Data(bar1Data - 5);
+        setBar1Data(bar1Data - 1);
     }
     const decrementBar2 = () => {
-        setBar2Data(bar2Data - 5);
+        setBar2Data(bar2Data - 1);
     }
     const decrementBar3 = () => {
-        setBar3Data(bar3Data - 5);
+        setBar3Data(bar3Data - 1);
     }
     const decrementBar4 = () => {
-        setBar4Data(bar4Data - 5);
+        setBar4Data(bar4Data - 1);
     }
     const decrementBar5 = () => {
-        setBar5Data(bar5Data - 5);
+        setBar5Data(bar5Data - 1);
     }
     const decrementBar6 = () => {
-        setBar6Data(bar6Data - 5);
+        setBar6Data(bar6Data - 1);
     }
     const decrementBar7 = () => {
-        setBar7Data(bar7Data - 5);
+        setBar7Data(bar7Data - 1);
     }
     const decrementBar8 = () => {
-        setBar8Data(bar8Data - 5);
+        setBar8Data(bar8Data - 1);
     }
 
     const handleSheriffClick = (name) => {
@@ -126,13 +126,21 @@ const App = (props) => {
                                 <h4 style={styles.headerText}>Overview</h4>
                                 <TrollChart
                                     bar1={bar1}
+                                    userIcon={<PersonIcon />}
                                     bar2={bar2}
+                                    userIcon={<PersonIcon />}
                                     bar3={bar3}
+                                    userIcon={<PersonIcon />}
                                     bar4={bar4}
+                                    userIcon={<PersonIcon />}
                                     bar5={bar5}
+                                    userIcon={<PersonIcon />}
                                     bar6={bar6}
+                                    userIcon={<PersonIcon />}
                                     bar7={bar7}
+                                    userIcon={<PersonIcon />}
                                     bar8={bar8}
+                                    userIcon={<PersonIcon />}
                                 />
                             </Card.Body>
                         </Card>

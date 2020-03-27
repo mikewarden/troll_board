@@ -17,8 +17,8 @@ const UserCard = (props) => {
     return (
         <Card style={styles.cardRowStyle}>
             <Card.Body>
-                <Container>
-                    <Row>
+                <Container >
+                    <Row >
                         <Col xs={2}>
                             {props.userPic}
                         </Col>
@@ -31,11 +31,11 @@ const UserCard = (props) => {
                                     <AddIcon />
                                 </Fab> */}
                     <Row>
-                        <Col xs={4}>
-                            <h6>Trolls</h6>
+                        <Col md={4} style={styles.rowStyle}>
+                            <p>Trolls</p>
                             <p>{props.numTrolls}</p>
                         </Col>
-                        <Col xs={8}>
+                        <Col md={8} style={styles.rowStyle}>
                     <Button onClick={props.increment} style={styles.buttonStyle} variant="warning">+ Add Troll</Button>
                         </Col>
                     </Row>
@@ -70,6 +70,10 @@ const styles = {
     headerText: {
         color: '#FFF',
         
+    },
+     rowStyle: {
+        border: '1px solid #424B52',
+        padding: '16px'
     }
 }
 

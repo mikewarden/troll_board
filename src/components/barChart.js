@@ -13,43 +13,43 @@ const TrollChart = (props) => {
         <div style={styles.chartStyle}>
             <Container fluid>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="success" style={styles.barStyle} now={props.bar1} label={`Rigo ${props.bar1}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="success" style={styles.barStyle} now={props.bar1} label={`Rigo ${props.bar1}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="warning" style={styles.barStyle} now={props.bar2} label={`Dick Wyn ${props.bar2}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="warning" style={styles.barStyle} now={props.bar2} label={`Dick Wyn ${props.bar2}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="info" style={styles.barStyle} now={props.bar3} label={`Juan ${props.bar3}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="info" style={styles.barStyle} now={props.bar3} label={`Juan ${props.bar3}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="danger" style={styles.barStyle} now={props.bar4} label={`Josh ${props.bar4}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="danger" style={styles.barStyle} now={props.bar4} label={`Josh ${props.bar4}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="success" style={styles.barStyle} now={props.bar5} label={`Brandon ${props.bar5}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="success" style={styles.barStyle} now={props.bar5} label={`Brandon ${props.bar5}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="warning" style={styles.barStyle} now={props.bar6} label={`Jaeho ${props.bar6}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="warning" style={styles.barStyle} now={props.bar6} label={`Jaeho ${props.bar6}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="info" style={styles.barStyle} now={props.bar7} label={`Mike ${props.bar7}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="info" style={styles.barStyle} now={props.bar7} label={`Mike ${props.bar7}%`} />
                 </Col>
                 </Row>
                 <Row>
-                    <Col xs={1}>{props.userIcon}</Col>
-                <Col xs={11} ><ProgressBar variant="danger" style={styles.barStyle} now={props.bar8} label={`Guest ${props.bar8}%`} />
+                    <Col lg={1}>{props.userIcon}</Col>
+                <Col lg={11} ><ProgressBar variant="danger" style={styles.barStyle} now={props.bar8} label={`Guest ${props.bar8}%`} />
                 </Col>
                 </Row>
             </Container>

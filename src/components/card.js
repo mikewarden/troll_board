@@ -32,7 +32,7 @@ const UserCard = (props) => {
                                 </Fab> */}
                     <Row>
                         <Col md={4} style={styles.rowStyle}>
-                            <p>Trolls</p>
+                            <p style={{color: '#768794'}}>Trolls</p>
                             <p>{props.numTrolls}</p>
                         </Col>
                         <Col md={8} style={styles.rowStyle}>
